@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Sandwich</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+  <body>
+     <header>
+        <h1>Resep Sandwich</h1>
+        <p class = "subtitle">Pilih resep sandwich favoritmu!</p>
+        <p class="note">-Ala anak kos</p>
+            
+     </header>
+
+     <main>
+      <div class="tabs">
+        <button onclick="bringTheRecipe(0)">Classic</button>
+        <button onclick="bringTheRecipe(1)">Chicken</button>
+        <button onclick="bringTheRecipe(2)">Egg</button>
+      </div>
+
+      <section id="recipe-card" class="recipe-card">
+        <!-- Recipe content will be added here by JavaScript -->
+      </section>
+    
+      </main>   
+
+     <script src="node.js"></script>
+   </body>
+</html>

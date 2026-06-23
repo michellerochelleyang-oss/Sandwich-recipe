@@ -1,0 +1,140 @@
+:root {
+  --bread: #f4c77b;
+  --toast: #b86b32;
+  --lettuce: #5fa85f;
+  --tomato: #d94c3d;
+  --cream: #fff8e7;
+  --ink: #2b2118;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(180deg, #fff9f0 0%, #f7e7d4 100%);
+  color: var(--ink);
+}
+
+body > main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 18px 40px;
+}
+
+header {
+  text-align: center;
+  padding: 28px 0 16px;
+}
+
+header h1 {
+  margin: 14px 0;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  letter-spacing: -0.03em;
+}
+
+header p {
+  margin: 4px auto 0;
+  max-width: 640px;
+  color: #5f492e;
+  line-height: 1.7;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 36px 0 24px;
+}
+
+.tabs button {
+  border: 1px solid var(--toast);
+  background: #fff8e7;
+  color: #2b2118;
+  padding: 10px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 18px rgba(94, 53, 18, 0.12);
+}
+
+.tabs button:hover {
+  background: #f4c77b;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(94, 53, 18, 0.18);
+}
+
+.tabs button.active {
+  background: #fff8e7;
+  font-weight: bold;
+}
+
+.recipe-card {
+ background: #fff8e7;
+  border: 2px solid var(--toast);
+  padding: 16px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 18px 38px rgba(74, 47, 20, 0.12);
+  z-index: 1;
+}
+
+.recipe-card img {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  display: block;
+  margin: 0 auto 24px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.recipe-card h2 {
+  margin: 0 0 12px;
+  font-size: 2rem;
+}
+
+.recipe-card p {
+  margin: 0 0 24px;
+  line-height: 1.75;
+  color: #5b4221;
+}
+
+.recipe-card h3 {
+  margin: 24px 0 12px;
+}
+
+.recipe-card ul,
+.recipe-card ol {
+  margin: 0;
+  padding-left: 1.35rem;
+  line-height: 1.8;
+}
+
+.recipe-card li {
+  margin-bottom: 0.6rem;
+}
+
+@media (max-width: 600px) {
+  body > main {
+    padding: 18px 14px 32px;
+}
+
+.recipe-card {
+    padding: 22px;
+  }
+}
+
+.subtitle {
+  margin-bottom: 8px;
+}
+
+.note {
+    margin-top: 0;
+    font-size: 0.85rem;
+  color: #777;
+}
